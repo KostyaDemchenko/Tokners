@@ -14,7 +14,7 @@
     width: 0;
 }
 
-section {
+section, p, h2 {
     margin: 0;
     padding: 0;
 }
@@ -139,6 +139,11 @@ header ul li a:hover {
     position: relative;
 }
 
+.main-screen .container{
+    max-width: 1598px;
+    align-items: center;
+}
+
 .bg-img-main-screen{
     position: absolute;
     top: -121px;
@@ -156,4 +161,33 @@ header ul li a:hover {
     color: var(--blue);
     font-family: var(--font-fam);
     font-weight: var(--font-w-medium);
+    font-size: 18px;
+    line-height: 54px;
+    margin-bottom: 5px;
+}
+
+.main-screen h2{
+    color: var(--black);
+    font-family: var(--font-fam);
+    font-weight: var(--font-w-medium);
+    font-size: 48px;
+    line-height: 54px;
+}
+
+.description{
+    color: var(--black);
+    font-family: var(--font-fam);
+    font-weight: var(--font-w-light);
+    opacity: 0.6;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.main-screen .sign-up{
+    background-color: var(--green);
+    color: var(--white);
+    text-decoration: none;
+    text-align: center;
 }
