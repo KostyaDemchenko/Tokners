@@ -13,3 +13,49 @@
     --black: #191B21;
     --dark-blue: #1D1534;
 }
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+section {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+a:focus, a:active{
+    color: var(--white);
+}
+
+/* Header */
+header {
+    width: 100%;
+    padding: 15px 0;
+    background-color: var(--black);
+    position: sticky;
+    top: 0;
+    scroll-behavior: smooth;
+    z-index: 1;
+    border-bottom: 2px solid var(--grey);
+    display: flex;
+}
+
+header ul li a{
+    font-family: var(--font-fam);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: underline;
+}
