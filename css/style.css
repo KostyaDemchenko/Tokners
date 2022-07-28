@@ -1,0 +1,15 @@
+:root {
+    --font-fam: 'Azo Sans';
+    --font-w-bold: 700;
+    --font-w-medium: 500;
+    --font-w-light: 300;
+    --font-s-bold: 48px;
+    --font-s-ex-medium: 18px;
+    --font-s-medium: 16px;
+    --font-s-small: 14px;
+    --white: #FFFFFF;
+    --green: #22A75D;
+    --blue: #2278D4;
+    --black: #191B21;
+    --dark-blue: #1D1534;
+}
