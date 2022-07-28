@@ -3,10 +3,6 @@
     --font-w-bold: 700;
     --font-w-medium: 500;
     --font-w-light: 300;
-    --font-s-bold: 48px;
-    --font-s-ex-medium: 18px;
-    --font-s-medium: 16px;
-    --font-s-small: 14px;
     --white: #FFFFFF;
     --green: #22A75D;
     --blue: #2278D4;
@@ -47,6 +43,7 @@ a:hover {
 }
 
 /* Header */
+
 header {
     width: 100%;
     padding: 35px 0;
@@ -80,6 +77,15 @@ header ul li a {
     line-height: 17px;
     text-decoration: underline;
     text-transform: uppercase;
+    transition: .3s;
+}
+
+header ul li a:hover {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 18px;
+    text-decoration: none;
+    transition: .3s;
 }
 
 .headder-container {
@@ -119,9 +125,35 @@ header ul li a {
     padding: 17px 30px;
     border-radius: 100vw;
     border: 0;
+    max-width: 147px;
 }
 
 .sign-up {
     background-color: var(--white);
     color: var(--black);
+}
+
+/* Main Screen */
+
+.main-screen{
+    position: relative;
+}
+
+.bg-img-main-screen{
+    position: absolute;
+    top: -121px;
+    right: 0;
+    z-index: -1;
+}
+
+.text-box{
+    display: flex;
+    flex-direction: column;
+    max-width: 555px;
+}
+
+.pre{
+    color: var(--blue);
+    font-family: var(--font-fam);
+    font-weight: var(--font-w-medium);
 }
