@@ -47,7 +47,6 @@ a:hover {
 header {
     width: 100%;
     padding: 35px 0;
-    position: sticky;
     top: 0;
     scroll-behavior: smooth;
 }
@@ -141,12 +140,14 @@ header ul li a:hover {
 
 .main-screen .container{
     max-width: 1598px;
+    display: flex;
     align-items: center;
+    flex-direction: row;
 }
 
 .bg-img-main-screen{
     position: absolute;
-    top: -121px;
+    top: 0;
     right: 0;
     z-index: -1;
 }
@@ -190,4 +191,13 @@ header ul li a:hover {
     color: var(--white);
     text-decoration: none;
     text-align: center;
+}
+
+.img-box_main-screen{
+    width: 100%;
+    min-height: 785px;
+    background-image: url(../img/main_screen/boys_main-screen.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
 }
