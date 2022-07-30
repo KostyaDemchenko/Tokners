@@ -18,7 +18,7 @@ body{
     position: relative;
 }
 
-section, p, h2 {
+section, p, h2, h3 {
     margin: 0;
     padding: 0;
 }
@@ -210,13 +210,25 @@ header ul li a:hover {
     background-position: right;
 }
 
-/* For Holders/Creator */
+/* BG-Cards */
 
 .bg-cards{
     position: absolute;
-    top: 115vh;
+    top: 135vh;
     left: 0;
-    z-index: -1; 
+    width: 100vw;
+    height: 100%;
+    max-height: 1212px;
+    z-index: -1;
+    background-image: url(../img/cards/bg-cards.png);
+    background-repeat: no-repeat;
+}
+
+/* Cards */
+
+.cards{
+    margin-top: 105px;
+    margin-bottom: 140px;
 }
 
 .cards .container{
@@ -280,14 +292,43 @@ header ul li a:hover {
     text-align: center;
 }
 
-/* BG-Cards */
+/* What makes us different? */
 
-.bg-cards{
-    width: 100vw;
-    height: 100%;
-    max-height: 1212px;
-    z-index: -1;
-    background-image: url(../img/cards/bg-cards.png);
-    background-repeat: no-repeat;
+.us-different .container {
+    display: flex;
+    justify-content: flex-start;
 }
 
+.box_us-dif{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    width: 100%;
+}
+
+.logo-box-what img{
+    max-width: 55px;
+}
+
+.us-different h3{
+    color: var(--white);
+    font-family: var(--font-fam);
+    font-weight: var(--font-w-medium);
+    font-size: 48px;
+    line-height: 54px;
+    max-width: 356px;
+}
+
+.us-different .description, .up-descrip{
+    color: var(--white);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.up-descrip{
+    font-family: var(--font-fam);
+    font-weight: var(--font-w-medium);
+    font-size: 16px;
+    line-height: 20px;
+    opacity: 0.6;
+}
