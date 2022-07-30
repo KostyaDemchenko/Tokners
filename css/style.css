@@ -138,6 +138,7 @@ header ul li a:hover {
 .sign-up {
     background-color: var(--white);
     color: var(--black);
+    text-decoration: none;
 }
 
 /* Main Screen */
@@ -214,7 +215,7 @@ header ul li a:hover {
 
 .bg-cards{
     position: absolute;
-    top: 135vh;
+    top: 20%;
     left: 0;
     width: 100vw;
     height: 100%;
@@ -227,13 +228,16 @@ header ul li a:hover {
 /* Cards */
 
 .cards{
+    height: fit-content;
     margin-top: 105px;
-    margin-bottom: 140px;
+    margin-bottom: 400px;
+    position: relative;
 }
 
-.cards .container{
+.for-people{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 140px;
 }
 
 .for-creator, .for-holders{
@@ -294,7 +298,7 @@ header ul li a:hover {
 
 /* What makes us different? */
 
-.us-different .container {
+.us-different{
     display: flex;
     justify-content: flex-start;
 }
@@ -331,4 +335,84 @@ header ul li a:hover {
     font-size: 16px;
     line-height: 20px;
     opacity: 0.6;
+}
+
+/* Time-Lamps */
+
+.data-container, .points-of-business{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+}
+
+.q{
+    font-family: var(--font-fam);
+    font-weight: var(--font-w-bold);
+    font-size: 16px;
+    line-height: 54px;
+    color: var(--green);
+}
+
+.year{
+    font-family: var(--font-fam);
+    font-weight: var(--font-w-medium);
+    font-size: 36px;
+    line-height: 54px;
+    color: var(--black);
+}
+
+.arrow{
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.3'%3E%3Cpath d='M9 18L15 12L9 6' stroke='%234A4D61' stroke-width='1.33333' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+
+.line-time{
+    width: 100%;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='1271' height='60' viewBox='0 0 1271 60' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.12' d='M1270.41 58.9996L1254.36 58.9996M794.409 58.9996L1254.36 58.9996M1254.36 58.9996C1236.13 59.081 1199.67 48.1952 1199.67 4.00001M854.696 58.9996C836.464 59.081 800 48.1952 800 4M850.365 58.9996L458.696 58.9996M458.696 58.9996H458.289M458.696 58.9996C458.561 59.0002 458.426 59.0002 458.289 58.9996M458.289 58.9996L398.409 58.9996M458.289 58.9996C439.927 58.9183 404 47.8685 404 4M455.365 58.9996L59.6962 58.9996M59.6962 58.9996H59.2888M59.6962 58.9996C59.5614 59.0002 59.4256 59.0002 59.2888 58.9996M59.2888 58.9996C40.927 58.9183 5 47.8685 5 4' stroke='black' stroke-width='2' stroke-dasharray='2 2'/%3E%3Ccircle cx='4.5' cy='4.5' r='4.5' transform='rotate(-90 4.5 4.5)' fill='%2322A75D'/%3E%3Ccircle cx='404.5' cy='4.5' r='4.5' transform='rotate(-90 404.5 4.5)' fill='%2322A75D'/%3E%3Ccircle cx='800.5' cy='4.5' r='4.5' transform='rotate(-90 800.5 4.5)' fill='%2322A75D'/%3E%3Ccircle cx='1200.5' cy='4.5' r='4.5' transform='rotate(-90 1200.5 4.5)' fill='%2322A75D'/%3E%3C/svg%3E%0A");
+}
+
+.points-of-business{
+    max-width: 100%;
+    align-items: baseline;
+}
+
+.points-of-business ol{
+    counter-reset: num;
+	list-style: none;
+	margin-bottom: 20px;
+	padding: 0;
+}
+
+.points-of-business ol li {
+	counter-increment: num;
+	position: relative;
+	margin: 5px 0 5px 40px;
+	padding: 0;
+	font-family: var(--font-fam);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 34px;
+    color: var(--black)0.7;
+    max-width: 305px;
+}
+.points-of-business ol li:before {
+	content: counter(num);
+	position: absolute;
+	left: -40px;
+	top: 0;
+    font-size: 12px;
+    line-height: 34px;
+	text-align: left;
+	font-family: var(--font-fam);
+    font-weight: var(--font-w-bold);
+    color: var(--blue);
+}
+.points-of-business ol li:nth-child(-n+9):before {
+	content: "0" counter(num);
 }
