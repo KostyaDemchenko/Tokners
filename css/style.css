@@ -231,6 +231,7 @@ header ul li a:hover {
     height: fit-content;
     margin-top: 105px;
     margin-bottom: 400px;
+    padding-bottom: 50px;
     position: relative;
 }
 
