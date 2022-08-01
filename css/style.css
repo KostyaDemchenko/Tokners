@@ -106,7 +106,7 @@ header ul li a:hover {
 
 .logo-box {
     display: flex;
-    max-width: auto;
+    max-width: 219px;
     width: 100%;
     min-height: 35px;
 }
@@ -635,7 +635,7 @@ header ul li a:hover {
     font-weight: 400;
 }
 
-.presale .list h3{
+.presale .list h3 {
     color: var(--white);
     font-family: var(--font-fam);
     font-weight: var(--font-w-medium);
@@ -644,3 +644,112 @@ header ul li a:hover {
     margin-bottom: 20px;
 }
 
+/* Futor */
+
+.futor{
+    padding-top: 60px;
+    background-color: var(--dark-blue);
+    padding-bottom: 10%;
+}
+
+.futor .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.futor .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 810px;
+    margin-bottom: 60px;
+}
+
+.futor .navigation a,
+.futor .navigation .slash {
+    color: var(--white);
+    font-family: var(--font-fam);
+    font-weight: var(--font-w-bold);
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.futor .navigation a:hover{
+    color: var(--white);
+    font-size: 18px;
+    text-decoration-line: none;
+    transition: .5s;
+}
+
+.futor .navigation .slash {
+    text-decoration-line: none;
+    text-transform: none;
+    opacity: 0.16;
+}
+
+.futor .media{
+    margin-top: 60px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.futor .media .logo{
+    background-image: url(../img/logo/logo_text_white.svg);
+}
+
+.futor .social-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 350px;
+    width: 100%;
+}
+
+.futor .social-media .icon{
+    max-width: 50px;
+    width: 100%;
+    max-height: 50px;
+    border-radius: 100vw;
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    justify-content: center;
+    transition: .2s;
+}
+
+.futor .social-media .icon:hover{
+    transform: scale(1.1);
+    border: 2px solid rgba(255, 255, 255, 0.30);
+    transition: .2s;
+}
+
+.futor .social-media .icon img{
+    padding: 15px 0;
+}
+
+.futor .copyright p, .futor .copyright .text-box{
+    color: var(--white);
+    font-family: var(--font-fam);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: right;
+}
+
+.futor .copyright .text-box{
+    font-size: 12px;
+    line-height: 140%;
+    font-weight: var(--font-w-medium);
+    text-decoration-line: underline;
+    letter-spacing: 0.02em;
+    opacity: 0.5;
+}
